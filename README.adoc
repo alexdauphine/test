@@ -1,0 +1,4 @@
+= sample-jax-rs
+
+A sample project with a simple JAX-RS resource class.
+
