@@ -1,0 +1,5 @@
+applications:
+ - name: sample-jax-rs
+   path: target/sample-jax-rs.war
+   instances: 1
+
