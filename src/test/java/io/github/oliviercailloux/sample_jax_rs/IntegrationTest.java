@@ -26,8 +26,8 @@ public class IntegrationTest {
 
 	@Deployment(testable = false)
 	public static WebArchive createDeployment() {
-		final WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
-				.addPackage(IntegrationTest.class.getPackage());
+		final WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war").addPackages(true,
+				IntegrationTest.class.getPackage());
 		return war;
 	}
 
