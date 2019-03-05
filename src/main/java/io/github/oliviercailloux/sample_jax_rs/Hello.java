@@ -31,7 +31,7 @@ public class Hello {
 			LOGGER.info(
 					String.format("Supported version: %d.%d.", context.getMajorVersion(), context.getMinorVersion()));
 		}
-		return justSayHello() + "It is " + Instant.now().toString() + ".";
+		return justSayHello() + " It is " + Instant.now().toString() + ".";
 	}
 
 	String justSayHello() {
