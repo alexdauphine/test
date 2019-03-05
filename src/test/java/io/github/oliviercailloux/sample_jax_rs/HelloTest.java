@@ -13,7 +13,7 @@ public class HelloTest {
 
 	@Test
 	public void testServlet() throws Exception {
-		assertEquals("Hello, world.", new Hello().sayHello());
+		assertEquals("Hello, world.", new Hello().justSayHello());
 	}
 
 }
