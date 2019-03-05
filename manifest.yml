@@ -5,5 +5,5 @@ applications:
    env:
       MY_ENV_VAR: 'my-env-value'
       MY_SECOND_ENV_VAR: 'my-second-{env}-"value"'
-      JBP_CONFIG_LIBERTY: 'app_archive: {features: [jsp-2.3, websocket-1.1]}'
+      JBP_CONFIG_LIBERTY: 'app_archive: {implicit_cdi: true, features: [webProfile-8.0]}'
 
