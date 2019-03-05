@@ -6,10 +6,10 @@ import java.util.logging.Logger;
 
 import org.junit.jupiter.api.Test;
 
-public class IntegrationTest {
+public class HelloTest {
 
 	@SuppressWarnings("unused")
-	private static final Logger LOGGER = Logger.getLogger(IntegrationTest.class.getCanonicalName());
+	private static final Logger LOGGER = Logger.getLogger(HelloTest.class.getCanonicalName());
 
 	@Test
 	public void testServlet() throws Exception {
