@@ -1,5 +1,6 @@
 package io.github.oliviercailloux.sample_jax_rs;
 
+import java.time.Instant;
 import java.util.logging.Logger;
 
 import javax.enterprise.context.RequestScoped;
@@ -27,8 +28,10 @@ public class Hello {
 		} else {
 			LOGGER.info(String.format("Running on version: %d.%d.", context.getEffectiveMajorVersion(),
 					context.getEffectiveMinorVersion()));
+			LOGGER.info(
+					String.format("Supported version: %d.%d.", context.getMajorVersion(), context.getMinorVersion()));
 		}
-		return justSayHello();
+		return justSayHello() + "It is " + Instant.now().toString() + ".";
 	}
 
 	String justSayHello() {
