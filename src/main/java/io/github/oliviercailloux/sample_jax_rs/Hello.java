@@ -2,6 +2,7 @@ package io.github.oliviercailloux.sample_jax_rs;
 
 import java.util.logging.Logger;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.servlet.ServletContext;
 import javax.ws.rs.GET;
@@ -9,6 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+@RequestScoped
 @Path("hello")
 public class Hello {
 	@SuppressWarnings("unused")
