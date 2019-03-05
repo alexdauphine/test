@@ -22,8 +22,6 @@ public class Hello {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayHello() {
-		LOGGER.info(
-				String.format("Env values: %s, %s.", System.getenv("MY_ENV_VAR"), System.getenv("MY_SECOND_ENV_VAR")));
 		if (context == null) {
 			LOGGER.warning("Context is null.");
 		} else {
