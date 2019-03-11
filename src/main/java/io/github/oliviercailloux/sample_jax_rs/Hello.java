@@ -22,7 +22,7 @@ public class Hello {
 
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String sayHello() {
+	public String sayHello() {/*
 		if (context == null) {
 			LOGGER.warning("Context is null.");
 		} else {
@@ -30,7 +30,7 @@ public class Hello {
 					context.getEffectiveMinorVersion()));
 			LOGGER.info(
 					String.format("Supported version: %d.%d.", context.getMajorVersion(), context.getMinorVersion()));
-		}
+		}*/
 		return justSayHello() + " It is " + Instant.now().toString() + ".";
 	}
 
