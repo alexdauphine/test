@@ -14,12 +14,12 @@ import javax.ws.rs.core.MediaType;
 @RequestScoped
 @Path("hello")
 public class Hello {
-	@SuppressWarnings("unused")
+	/*@SuppressWarnings("unused")
 	private static final Logger LOGGER = Logger.getLogger(Hello.class.getCanonicalName());
 
 	@Inject
 	private ServletContext context;
-
+*/
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayHello() {/*
