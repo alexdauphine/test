@@ -1,6 +1,6 @@
 applications:
- - name: sample-jax-rs
-   path: target/sample-jax-rs.war
+ - name: alextest
+   path: alextest
    instances: 1
    env:
       JBP_CONFIG_LIBERTY: 'app_archive: {implicit_cdi: true, features: [webProfile-8.0]}'
