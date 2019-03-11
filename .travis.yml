@@ -10,9 +10,8 @@ cache:
 deploy:
   provider: bluemixcloudfoundry
   skip_cleanup: true
-  username: olivier.cailloux@dauphine.fr
+  username: alexandre.cote@dauphine.eu
   password: $BLUEMIX_PASSWORD
-  organization: olivier.cailloux@dauphine.fr
+  organization: alexandre.cote@dauphine.eu
   space: dev
   region: eu-gb
-
